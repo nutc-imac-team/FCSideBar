@@ -1,19 +1,20 @@
 # iOS-000-FCSideBar
 
 ##Introduction 介紹
-![Awesome cat gif]()
+![demo gif](http://i.imgur.com/7BJBJBz.gif)
 
 
 ##How to use 使用
 
 Example 範例：
-將三個controller放入```customViewControllers```這個陣列，並設定每個controller的```sideBarName```。sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。
+將欲加入的controller放入```customViewControllers```這個陣列，並設定每個controller的```sideBarName```。sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。
 
-Set ```sideBarName``` of controller. 
+Put controllers into ```customViewControllers```. 
+Set each ```sideBarName``` of controller. 
+There will be a sideBarName list on sideBar, selecting the name will switch to corresponding controller.
 
-Put these controllers into ```customViewControllers```. 
 
-There will be a sideBarName list on sideBar, selecting the corresponding name will switch to corresponding controller.
+Here is sample code 以下為範例程式碼：
 ```
     self.fcAnimationOneController = [[FCAnimationOneController alloc] init];
     self.fcAnimationOneController.sideBarName = @"ControllerOne";
