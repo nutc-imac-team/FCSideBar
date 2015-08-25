@@ -6,16 +6,23 @@
 
 ##How to use 使用
 
-1.
+1. 
 Put controllers into ```customViewControllers```. 
 
-2.
+2. 
 Set each ```sideBarName``` of controller. 
 
-3.
+3. 
 There will be a sideBarName list on sideBar, selecting the name will switch to corresponding controller.
 
-將欲加入的controller放入```customViewControllers```這個陣列，並設定每個controller的```sideBarName```。sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。
+1. 
+將欲加入的controller放入```customViewControllers```這個陣列。
+
+2. 
+設定每個controller的```sideBarName```。
+
+3. 
+sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。
 
 
 Here is sample code 以下為範例程式碼：
@@ -32,19 +39,21 @@ Here is sample code 以下為範例程式碼：
     self.fcAnimationNavigationController.customViewControllers = @[self.fcAnimationOneController, self.fcAnimationTwoController, self.fcAnimationThreeController];
 ```
 
+***
 ##Warning
-**Controller that you want to put in customViewControllers must inherit FCBaseController.**
-
-**controller.view have been setted FCAnimationBaseView.**
-
-**Please use [controller.view addSubView:your customized view] if you want to set your customized view**
+> **Controller that you want to put in customViewControllers must inherit FCBaseController.**
+>
+> **controller.view have been setted FCAnimationBaseView.**
+>
+> **Please use [controller.view addSubView:your customized view] if you want to set your customized view**
 
 ##注意
-**欲加入controller需繼承於FCBaseController。**
-
-**FCBaseController的view已經被設定為FCAnimationBaseView**
-
-**如果要將controller的view設定成自己製作的view，請用[controller.view addSubView:自製的View]**
+> **欲加入controller需繼承於FCBaseController。**
+>
+> **FCBaseController的view已經被設定為FCAnimationBaseView**
+>
+> **如果要將controller的view設定成自己製作的view，請用[controller.view addSubView:自製的View]**
+***
 
 ##Customized 客製化
 
