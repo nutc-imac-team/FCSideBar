@@ -1,6 +1,6 @@
 # iOS-000-FCSideBar
 
-##介紹
+##Introduction 介紹
 
-##使用
+##How to use 使用
 
