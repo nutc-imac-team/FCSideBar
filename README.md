@@ -1,28 +1,20 @@
-# iOS-000-FCSideBar
+# FCSideBar
 
-##Introduction 介紹
+###Introduction 介紹
 ![demo gif](http://i.imgur.com/WqQi3Of.gif)
 
 
-##How to use 使用
+###How to use 使用
 
-1. 
-Put controllers into ```customViewControllers```. 
+1. Put controllers into ```customViewControllers```.
+2. Set each ```sideBarName``` of controller.
+3. There will be a sideBarName list on sideBar, selecting the name will switch to corresponding controller.
 
-2. 
-Set each ```sideBarName``` of controller. 
+# 
 
-3. 
-There will be a sideBarName list on sideBar, selecting the name will switch to corresponding controller.
-
-1. 
-將欲加入的controller放入```customViewControllers```這個陣列。
-
-2. 
-設定每個controller的```sideBarName```。
-
-3. 
-sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。
+1. 將欲加入的controller放入```customViewControllers```這個陣列。
+2. 設定每個controller的```sideBarName```。
+3. sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。
 
 
 Here is sample code 以下為範例程式碼：
@@ -40,6 +32,7 @@ Here is sample code 以下為範例程式碼：
 ```
 
 ***
+
 ##Warning
 > **Controller that you want to put in customViewControllers must inherit FCBaseController.**
 >
@@ -53,6 +46,7 @@ Here is sample code 以下為範例程式碼：
 > **FCBaseController的view已經被設定為FCAnimationBaseView**
 >
 > **如果要將controller的view設定成自己製作的view，請用[controller.view addSubView:自製的View]**
+
 ***
 
 ##Customized 客製化
