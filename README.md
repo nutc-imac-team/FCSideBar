@@ -1,7 +1,7 @@
 # iOS-000-FCSideBar
 
 ##Introduction 介紹
-![demo gif](http://i.imgur.com/7BJBJBz.gif)
+![demo gif](http://i.imgur.com/WqQi3Of.gif)
 
 
 ##How to use 使用
