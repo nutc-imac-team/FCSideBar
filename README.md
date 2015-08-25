@@ -1,7 +1,7 @@
 # iOS-000-FCSideBar
 
 ##Introduction 介紹
-![Awesome cat gif](http://media.giphy.com/media/7z2oyDXIMEs8w/giphy.gif)
+![Awesome cat gif]()
 
 
 ##How to use 使用
