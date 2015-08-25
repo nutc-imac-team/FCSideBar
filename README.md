@@ -46,15 +46,19 @@ Here is sample code 以下為範例程式碼：
 
 ##Customized 客製化
 
-####Customize backgroundcolor of ```FCAnimationBaseView```
-####客製化```FCAnimationBaseView```的backgroundcolor
+Customize backgroundcolor of ```FCAnimationBaseView```
+
+客製化```FCAnimationBaseView```的backgroundcolor
 
 ```- (void) setCustomSuperViewBackgroundColor:(UIColor*)customBackgroundColor;```
 
-####Customize sidebarcell and background color in sidebar
-####use ```FCCustomSideBarCellDelegate```
-####客製化Sidebarcell與Sidebar的背景顏色
-####使用```FCCustomSideBarCellDelegate```
+Customize sidebarcell and background color in sidebar
+
+use ```FCCustomSideBarCellDelegate```
+
+客製化Sidebarcell與Sidebar的背景顏色
+
+使用```FCCustomSideBarCellDelegate```
 
 ```
 FCCustomSideBarCellDelegate
