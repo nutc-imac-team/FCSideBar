@@ -6,14 +6,18 @@
 
 ###How to use 使用
 
-1. Put controllers into ```customViewControllers```.
-2. Set each ```sideBarName``` of controller.
-3. There will be a sideBarName list on sideBar, selecting the name will switch to corresponding controller.
+1. create ```FCAnimationNavigationController```.
+2. Put controllers into ```fcAnimationNavigationController.customViewControllers```.
+3. Set each ```sideBarName``` of controller.
+4. present to ```fcAnimationNavigationController```.
+5. There will be a sideBarName list on sideBar, selecting the name will switch to corresponding controller.
 
 
 <ol>
+<li>創建<code>FCAnimationNavigationController</code>。</li>
 <li>將欲加入的controller放入<code>customViewControllers</code>這個陣列。</li>
 <li>設定每個controller的<code>sideBarName</code>。</li>
+<li>將controller present到<code>fcAnimationNavigationController</code>。</li>
 <li>sideBar上的列表就會有相對應的名字，點選對應的名字即可切換到對應的controller。</li>
 </ol>
 
