@@ -10,14 +10,14 @@
 	<string>FCSideBarAnimation</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>398D53758B112E53D6E2A92CECF12E81DF6962AF</key>
+		<key>2C73C65C74D0FE6BE0E9F8632350E03EC7048B96</key>
 		<string>https://github.com/nutc-imac-team/iOS-000-FCSideBar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FCSideBarAnimation.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>398D53758B112E53D6E2A92CECF12E81DF6962AF</key>
+		<key>2C73C65C74D0FE6BE0E9F8632350E03EC7048B96</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>398D53758B112E53D6E2A92CECF12E81DF6962AF</string>
+	<string>2C73C65C74D0FE6BE0E9F8632350E03EC7048B96</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>398D53758B112E53D6E2A92CECF12E81DF6962AF</string>
+			<string>2C73C65C74D0FE6BE0E9F8632350E03EC7048B96</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FCSideBarAnimation</string>
 		</dict>
