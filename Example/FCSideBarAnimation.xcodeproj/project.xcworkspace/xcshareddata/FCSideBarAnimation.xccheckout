@@ -14,11 +14,11 @@
 		<string>https://github.com/nutc-imac-team/iOS-000-FCSideBar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FCSideBarAnimation.xcodeproj</string>
+	<string>Example/FCSideBarAnimation.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2C73C65C74D0FE6BE0E9F8632350E03EC7048B96</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/nutc-imac-team/iOS-000-FCSideBar.git</string>
