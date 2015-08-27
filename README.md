@@ -13,7 +13,7 @@ pod "FCSideBar", "~> 1.0.0"
 
 ###How to use 使用
 
-1. create ```FCAnimationNavigationController```.
+1. Please declare ```FCAnimationNavigationController``` and call [[<code>FCAnimationNavigationController</code> alloc] init].
 2. Put controllers into ```fcAnimationNavigationController.customViewControllers```.
 3. Set each ```sideBarName``` of controller.
 4. present to ```fcAnimationNavigationController```.
@@ -21,7 +21,7 @@ pod "FCSideBar", "~> 1.0.0"
 
 
 <ol>
-<li>創建<code>FCAnimationNavigationController</code>。</li>
+<li>請宣告一個FCAnimationNavigationController，並[[<code>FCAnimationNavigationController</code> alloc] init]。</li>
 <li>將欲加入的controller放入<code>fcAnimationNavigationController.customViewControllers</code>這個陣列。</li>
 <li>設定每個controller的<code>sideBarName</code>。</li>
 <li>將controller present到<code>fcAnimationNavigationController</code>。</li>
