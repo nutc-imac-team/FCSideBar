@@ -50,6 +50,8 @@ Here is sample code 以下為範例程式碼：
 > **controller.view have been setted FCAnimationBaseView.**
 >
 > **Please use [controller.view addSubView:your customized view] if you want to set your customized view**
+>
+> **Please make sure your "View controller-based status bar appearance" have setted "NO" in Info.plist if your StatusBar does not animate to hidden.**
 
 ##注意
 > **欲加入controller需繼承於FCBaseController。**
@@ -57,6 +59,8 @@ Here is sample code 以下為範例程式碼：
 > **FCBaseController的view已經被設定為FCAnimationBaseView**
 >
 > **如果要將controller的view設定成自己製作的view，請用[controller.view addSubView:自製的View]**
+>
+> **如果你的StatusBar沒有往上退回，請確定Info.plist中"View controller-based status bar appearance"的值是NO**
 
 # 
 
