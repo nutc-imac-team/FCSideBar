@@ -4,6 +4,13 @@
 ![demo gif](http://i.imgur.com/WqQi3Of.gif)
 
 
+###Podfile
+
+```
+platform :ios, '8.4'
+pod "FCSideBar", "~> 1.0.0"
+```
+
 ###How to use 使用
 
 1. create ```FCAnimationNavigationController```.
