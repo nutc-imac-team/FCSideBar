@@ -8,6 +8,10 @@
 
 #import "FCAnimationBaseView.h"
 
+static const NSTimeInterval kSideAnimationDuration = 0.25;
+static const NSTimeInterval kShortSideAnimationDuration = 0.1;
+
+
 @interface FCAnimationBaseView ()
 
 @property (nonatomic, strong) CAShapeLayer *animationBackgroundColorLayer;
@@ -50,7 +54,7 @@
     [originPath addLineToPoint:CGPointMake(CGRectGetMaxX(self.frame), 0)];
     [originPath closePath];
     CABasicAnimation *fcRemoveAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    [fcRemoveAnimation setDuration:0.25];
+    [fcRemoveAnimation setDuration:kSideAnimationDuration];
     [fcRemoveAnimation setDelegate:self];
     [fcRemoveAnimation setFromValue:(NSValue*)self.animationBackgroundColorLayer.path];
     [fcRemoveAnimation setToValue:(NSValue*)originPath.CGPath];
@@ -62,7 +66,7 @@
 
 - (void) userPanAnimateWithX:(float)animationX y:(float)animationY {
     for (UIView *subView in self.subviews) {
-        [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionCurveLinear animations:^{
+        [UIView animateWithDuration:kShortSideAnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionCurveLinear animations:^{
             subView.alpha = 0;
         } completion:nil];
         
@@ -100,7 +104,7 @@
     self.animationBackgroundColorLayer.shadowPath = confirmPath.CGPath;
     
     CABasicAnimation *fcDisplayAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    [fcDisplayAnimation setDuration:0.25];
+    [fcDisplayAnimation setDuration:kSideAnimationDuration];
     [fcDisplayAnimation setDelegate:self];
     [fcDisplayAnimation setFromValue:(NSValue*)self.confirmFromPath.CGPath];
     [fcDisplayAnimation setToValue:(NSValue*)confirmPath.CGPath];
@@ -113,12 +117,12 @@
 - (void) resetPanAnimate {
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
     for (UIView *subView in self.subviews) {
-        [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionCurveLinear animations:^{
+        [UIView animateWithDuration:kShortSideAnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionCurveLinear animations:^{
             subView.alpha = 1;
         } completion:nil];
     }
     __weak typeof(self) weakSelf = self;
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:kSideAnimationDuration animations:^{
         weakSelf.window.frame = CGRectMake(0, 0, CGRectGetWidth(weakSelf.window.frame), CGRectGetHeight(weakSelf.window.frame));
     } completion:^(BOOL finished) {
         if (finished) {
