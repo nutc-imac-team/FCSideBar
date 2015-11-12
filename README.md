@@ -4,9 +4,16 @@
 ![demo gif](http://i.imgur.com/WqQi3Of.gif)
 
 
-###How to use 使用
+###Podfile
 
-1. create ```FCAnimationNavigationController```.
+```
+platform :ios, '8.4'
+pod "FCSideBar", "~> 1.0.0"
+```
+
+###How to use 使用方式
+
+1. Please declare ```FCAnimationNavigationController``` and call <code>[[FCAnimationNavigationController alloc] init]</code>.
 2. Put controllers into ```fcAnimationNavigationController.customViewControllers```.
 3. Set each ```sideBarName``` of controller.
 4. present to ```fcAnimationNavigationController```.
@@ -14,7 +21,7 @@
 
 
 <ol>
-<li>創建<code>FCAnimationNavigationController</code>。</li>
+<li>請宣告一個FCAnimationNavigationController，並使用<code>[[FCAnimationNavigationController alloc] init]</code>。</li>
 <li>將欲加入的controller放入<code>fcAnimationNavigationController.customViewControllers</code>這個陣列。</li>
 <li>設定每個controller的<code>sideBarName</code>。</li>
 <li>將controller present到<code>fcAnimationNavigationController</code>。</li>
@@ -43,6 +50,8 @@ Here is sample code 以下為範例程式碼：
 > **controller.view have been setted FCAnimationBaseView.**
 >
 > **Please use [controller.view addSubView:your customized view] if you want to set your customized view**
+>
+> **Please make sure your "View controller-based status bar appearance" have setted "NO" in Info.plist if your StatusBar does not animate to hidden.**
 
 ##注意
 > **欲加入controller需繼承於FCBaseController。**
@@ -50,6 +59,8 @@ Here is sample code 以下為範例程式碼：
 > **FCBaseController的view已經被設定為FCAnimationBaseView**
 >
 > **如果要將controller的view設定成自己製作的view，請用[controller.view addSubView:自製的View]**
+>
+> **如果你的StatusBar沒有往上退回，請確定Info.plist中"View controller-based status bar appearance"的值是NO**
 
 # 
 
